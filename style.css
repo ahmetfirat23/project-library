@@ -59,7 +59,7 @@ label{
 }
 
 .card{
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 8em;
     height: fit-content;
@@ -158,7 +158,7 @@ input[type=number] {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }  
@@ -208,4 +208,8 @@ input[type=number] {
   text-align: center;
   font: inherit;
   width: 5em;
+}
+
+main{
+  display: flex;
 }
