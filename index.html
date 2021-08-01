@@ -1,0 +1,171 @@
+<html lang="en">
+  <head>
+    <title>Project: Library</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oregano&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="header">Project: Library</div>
+    </header>
+
+    <nav>
+      <div id="new-book-button">
+        Add a new book
+        <span class="material-icons-outlined navbar-signs">
+          add_circle_outline
+        </span>
+      </div>
+      <div id="search-bar">
+        <input
+          type="text"
+          placeholder="Search for a book"
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <span class="material-icons-outlined navbar-signs"> search </span>
+        <label for="category">Search by:</label>
+        <select name="category" id="category">
+          <option value="title">Title</option>
+          <option value="author">Author</option>
+          <option value="pages">Pages</option>
+        </select>
+      </div>
+    </nav>
+
+    <main>
+      <div class="card">
+        <div class="card-control">
+          <span class="edit-button buttons">Edit</span>
+          <span
+            class="material-icons-outlined navbar-signs buttons delete-button"
+          >
+            delete
+          </span>
+        </div>
+        <div class="card-title">Title:</div>
+        <div class="card-author">Author:</div>
+        <div class="card-pages">Pages:</div>
+        <div class="card-read">
+          Read:
+          <label class="switch">
+            <input type="checkbox" class="checkbox" />
+            <span class="toggle-thumb">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                style="fill: #4ade80; transform: ; -ms-filter: "
+              >
+                <path
+                  d="M10 15.586L6.707 12.293 5.293 13.707 10 18.414 19.707 8.707 18.293 7.293z"
+                ></path>
+              </svg>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                style="fill: #f87171; transform: ; -ms-filter: "
+              >
+                <path
+                  d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"
+                ></path>
+              </svg>
+            </span>
+          </label>
+        </div>
+      </div>
+    </main>
+
+    <div class="bg-popup">
+      <div class="popup-content">
+        <div class="header">Add a new book</div>
+        <div>
+          <form class="popup-form">
+            <div>
+              <label for="title">Title:</label>
+              <input
+                type="text"
+                placeholder="Enter title"
+                name="title"
+                required
+                autocomplete="off"
+                spellcheck="false"
+              />
+            </div>
+            <div>
+              <label for="author">Author:</label>
+              <input
+                type="text"
+                placeholder="Enter author"
+                name="author"
+                required
+                autocomplete="off"
+                spellcheck="false"
+              />
+            </div>
+            <div>
+              <label for="pages">Pages: </label>
+              <input
+                type="number"
+                placeholder="Enter pages"
+                name="pages"
+                required
+                autocomplete="off"
+              />
+            </div>
+            <div class="card-read">
+              <label for="read">Read:</label
+              ><label class="switch">
+                <input type="checkbox" class="checkbox" />
+                <span class="toggle-thumb">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 24 24"
+                    style="fill: #4ade80; transform: ; -ms-filter: "
+                  >
+                    <path
+                      d="M10 15.586L6.707 12.293 5.293 13.707 10 18.414 19.707 8.707 18.293 7.293z"
+                    ></path>
+                  </svg>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 24 24"
+                    style="fill: #f87171; transform: ; -ms-filter: "
+                  >
+                    <path
+                      d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"
+                    ></path>
+                  </svg>
+                </span>
+              </label>
+            </div>
+            <div class="popup-buttons">
+              <input type="submit" class="buttons save-button" value="Save">
+              <a class="buttons cancel-button">Nevermind</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
