@@ -12,6 +12,11 @@ body {
   text-decoration: underline #078012 solid;
 }
 
+header .header{
+  font-size: 72px;
+  margin-bottom: 5px;
+}
+
 nav {
   background-color: #af35ca;
   display: flex;
