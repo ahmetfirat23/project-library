@@ -143,8 +143,8 @@ function closePopup() {
   currentPopup.style.display = "none";
 }
 
-function removeBook() {
-  let removalCard = searchBar.value;
+function removeBook(event) {
+  let removalCard = event.target.parentNode.parentNode;
   let unique = removalCard.getAttribute("data-unique");
   bookArray.forEach((book) => {
     if (book.unique == unique) {
